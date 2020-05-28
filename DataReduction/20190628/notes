@@ -1,0 +1,144 @@
+
+
+
+-- Manually edit runlog file to suit the listmaker in case of filename issues etc.
+I/P: 	    run_log_20190628.wht
+O/P: 	    log.csv
+
+
+-- listmaker.py
+I/P:		log.csv
+O/P: 		All.csv
+		AllFits.csv
+		RBias.csv
+		BBias.csv
+		RNonBias.csv
+		bRNonBias.csv
+		BNonBias.csv
+		bBNonBias.csv
+		RFlat.csv
+		BFlat.csv
+		RData.csv
+		fRData.csv
+		BData.csv
+		fBData.csv
+
+
+-- reducer.py
+I/P:		
+O/P:				
+		getbias(i)
+		biasandtrim(i)
+		getflat(i)
+		normflat(i)
+		flatfield(i)
+
+
+
+-- cosmic.py
+   [requires the lacos_spec iraf package]
+
+O/P: 
+     Stepping through the Standards
+     2824195  Standard Star	OK
+     2824196  Standard Star	OK
+     2824215  Standard Star	OK
+     2824216  Standard Star	OK
+     2824229  Standard Star	OK
+     2824230  Standard Star	OK
+
+
+O/P: 
+     Stepping through the Science frames::
+     2824175  Science 	  Initial dodgey CR extraction (looks like it's to do with the polyfit...); Setting yorder=0 fixes this. 
+     2824176  Science	  OK
+     
+     2824179  Science	  OK
+     2824180  Science	  OK (with some nice emission lines ;-) 
+     
+     2824184  Science	  OK
+     2824185  Science	  OK
+     
+     2824189  Science	  Blue end of the blue; probably to the right on the broad line (MgII?) Also weird thing around pixel 300x2500
+     2824190  Science	  OK
+
+     2824197  Science	  OK (though weird -ve pixels at the far right end)
+     2824198  Science	  OK     
+
+     2824202  Science	  OK
+     2824203  Science	  OK
+
+     2824206  Science	  OK   (V. good SNR :-)
+     2824207  Science	  Initial problem in the target polynomial (rather than the sky poly); Setting yorder=100 fixes this. 
+
+     2824210  Science	  OK	  
+     2824211  Science	  OK
+
+     2824217  Science	  OK
+     2824218  Science	  OK
+
+     2824221  Science	  OK
+     2824222  Science	  OK 
+
+     2824225  Science	  OK  
+     2824226  Science	  OK
+
+
+
+-- airmasscorrect.py
+   **Not** needed anymore but used to correct mean airmass displaying incorrectly in headers
+
+
+-- aperture.py
+I/P:
+O/P:
+
+     Do All the Reds first::
+     2824175
+     2824179  low-SNR
+     2824184
+     2824196  Standard
+     2824198
+     2824203
+     2824207
+     2824211
+     2824215  Standard
+     2824218  few low-level signal spikes
+     2824222
+     2824226
+     2824230  Standard
+
+
+     Then (I think) all the Blues:: 
+     2824176
+     2824180  low-SNR
+     2824185
+     2824189
+     2824195  Standard, with lots of deep absorption lines
+     2824197
+     2824206  
+     2824210
+     2824216  Standard, with lots of deep absorption line
+     2824217                       
+     2824225
+     2824229
+
+
+-- identify.py
+
+Pick the three lines in the Red (and then in the Blue).
+Once things are fitted, +/-0.1 Ang on the lines is what you are after. 
+
+
+-- shifter.py 
+
+
+
+-- clipper.py
+
+
+-- calibrate.py
+
+
+-- combiner.py
+

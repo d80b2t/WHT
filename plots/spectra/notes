@@ -1,0 +1,18 @@
+
+Lots of the numbers in emission_lines.dat come from:
+
+
+
+David Homan's thesis
+e.g. 
+Table 1.5: Results from a reverberation mapping campaign of NGC 5548. The lags scale with ionisation energy (see figure 1.5), evidence for a stratified ionisation structure of the BLR. Data from Peterson (2008).
+e.g. 
+Table 4.1: Lags for the four broad emission lines of Mrk 110 used in this study, measured in the Reverberation Mapping study presented in K01. The errors are approximations of a 1-sigma error. This table is based on table 6 in that paper.
+
+
+and (of course!) 
+Vanden Berk et al. 2001.
+       e.g. Table 2		COMPOSITE QUASAR EMISSION-LINE FEATURES
+       	    Table 4		EMISSION-LINE VELOCITY SHIFTS RELATIVE TO [O III] lam5007
+
+Table 4 has Ionization Energies!! ;-)

@@ -1,0 +1,1 @@
+H'mann shifts: av=-0.01, tb=0.16, lr+0.06

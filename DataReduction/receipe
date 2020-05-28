@@ -1,0 +1,68 @@
+
+
+
+-- Manually edit runlog file to suit the listmaker in case of filename issues etc.
+I/P: 	    run_log_20190628.wht
+O/P: 	    log.csv
+
+
+-- listmaker.py
+I/P:		log.csv
+O/P: 		All.csv
+		AllFits.csv
+		RBias.csv
+		BBias.csv
+		RNonBias.csv
+		bRNonBias.csv
+		BNonBias.csv
+		bBNonBias.csv
+		RFlat.csv
+		BFlat.csv
+		RData.csv
+		fRData.csv
+		BData.csv
+		fBData.csv
+
+
+-- reducer.py
+I/P:		
+O/P:				
+		getbias(i)
+		biasandtrim(i)
+		getflat(i)
+		normflat(i)
+		flatfield(i)
+
+
+
+-- cosmic.py
+   [requires the lacos_spec iraf package]
+
+O/P: 
+     Step through the Standards
+O/P: 
+     Step through the Science frames::
+
+
+-- airmasscorrect.py
+   **Not** needed anymore but used to correct mean airmass displaying incorrectly in headers
+
+
+-- aperture.py
+I/P:
+O/P:
+     e.g. do the Reds first...
+     then all the Blues...
+
+
+-- identify.py
+
+
+-- shifter.py 
+
+
+-- clipper.py
+
+
+-- calibrate.py
+
